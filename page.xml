@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/page.xsd">
+	<import>
+		<page identifier="com.uz.usermap.Usermap">
+			<pageType>system</pageType>
+			<controller>usermap\page\UsermapPage</controller>
+			<handler>usermap\system\page\handler\UsermapPageHandler</handler>
+			<name language="de">Benutzerkarte</name>
+			<name language="en">User Map</name>
+			<permissions>user.usermap.canSeeUsermap</permissions>
+			<options>module_usermap</options>
+			
+			<content language="en">
+				<title>User Map</title>
+			</content>
+			<content language="de">
+				<title>Benutzerkarte</title>
+			</content>
+		</page>
+		
+		<page identifier="com.uz.usermap.UserSetting">
+			<pageType>system</pageType>
+			<controller>usermap\form\UsermapUserInputForm</controller>
+			<name language="de">Eigener Ort</name>
+			<name language="en">Own Location</name>
+			<hasFixedParent>1</hasFixedParent>
+			<parent>com.woltlab.wcf.AccountManagement</parent>
+			<permissions>user.usermap.canUseUsermap</permissions>
+			<options>module_usermap</options>
+			
+			<content language="en">
+				<title>Own Location</title>
+			</content>
+			<content language="de">
+				<title>Eigener Ort</title>
+			</content>
+		</page>
+	</import>
+</data>

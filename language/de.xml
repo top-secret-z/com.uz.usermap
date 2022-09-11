@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
+<import>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.usermap"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.acp.group.option.category.user.usermap"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.acp.group.option.admin.usermap.canManage"><![CDATA[Kann Benutzerkarte verwalten]]></item>
+		<item name="wcf.acp.group.option.user.usermap.canSeeUsermap"><![CDATA[Kann Benutzerkarte sehen]]></item>
+		<item name="wcf.acp.group.option.user.usermap.canUseUsermap"><![CDATA[Kann Benutzerkarte nutzen]]></item>
+	</category>
+	
+	<category name="wcf.acp.index">
+		<item name="wcf.acp.index.system.software.usermapVersion"><![CDATA[Benutzerkarte-Version]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.usermap"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.acp.option.category.usermap.data"><![CDATA[Daten]]></item>
+		<item name="wcf.acp.option.category.usermap.data.cache"><![CDATA[Geocoding-Cache]]></item>
+		<item name="wcf.acp.option.category.usermap.data.synchronize"><![CDATA[Synchronisation]]></item>
+		<item name="wcf.acp.option.category.usermap.general"><![CDATA[Allgemein]]></item>
+		<item name="wcf.acp.option.category.usermap.index"><![CDATA[Startseite]]></item>
+		<item name="wcf.acp.option.category.usermap.log"><![CDATA[Protokoll]]></item>
+		<item name="wcf.acp.option.category.usermap.map"><![CDATA[Karte]]></item>
+		<item name="wcf.acp.option.category.usermap.map.map"><![CDATA[Karte]]></item>
+		<item name="wcf.acp.option.category.usermap.map.group"><![CDATA[Benutzergruppen]]></item>
+		<item name="wcf.acp.option.category.usermap.map.user"><![CDATA[Benutzer]]></item>
+		<item name="wcf.acp.option.category.usermap.user"><![CDATA[Benutzer]]></item>
+		<item name="wcf.acp.option.category.usermap.user.display"><![CDATA[Anzeige]]></item>
+		<item name="wcf.acp.option.category.usermap.user.filter"><![CDATA[Filter]]></item>
+		<item name="wcf.acp.option.module_usermap"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.acp.option.usermap_data_cache_geo"><![CDATA[Löschen]]></item>
+		<item name="wcf.acp.option.usermap_data_cache_geo.description"><![CDATA[Gespeicherte Geocoding-Daten werden nach der angegebenen Zeit automatisch gelöscht.]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_enable"><![CDATA[Profilfeld - Karte]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_enable.description"><![CDATA[Wenn aktiviert, werden Karteneingabe und Benutzerprofilfeld „Benutzerkarte“ synchronisiert. Änderungen des Profilfeldes werden automatisch in die Karte übernommen und Karteneingaben ändern automatisch den Inhalt des Profilfelds. Ist dies deaktiviert, müssen Ortsdaten für die Benutzerkarte bei „Eigener Ort“ im Kontrollzentrum eingegeben werden.]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_fields_enable"><![CDATA[Anzeigen aktualisieren]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_fields_enable.description"><![CDATA[Wenn aktiviert, wird das Profilfeld „Benutzerkarte“ mit den unten ausgewählten Benutzerprofilfeldern synchronisiert. Dies wird nur benötigt, wenn erstmalig oder bei Bedarf auch später, Karteneinträge der Benutzer über „Anzeigen aktualisieren“ erstellt werden sollen. Die Daten aus den gewählten Feldern werden zusammengefasst in das Profilfeld „Benutzerkarte“ übernommen, wenn noch nicht ausgefüllt, und dann wird der Karteneintrag ermittelt.]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_nominatim"><![CDATA[OpenStreetMap nutzen]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_nominatim.description"><![CDATA[Zum Synchronisieren wird zunächst OpenStreetMap genutzt. Wenn OpenStreetMap bei der Ortssuche kein Ergebnis findet, wird Google Maps genutzt.<br>Das Abschalten von OpenStreetMap kann zu besseren Ergebnissen führen. Es belastet aber das Google Maps-Konto mit mehr kostenpflichtigen Aufrufen.]]></item>
+		<item name="wcf.acp.option.usermap_data_synchronize_with"><![CDATA[Synchronisieren mit]]></item>
+		<item name="wcf.acp.option.usermap_index_enable_stats"><![CDATA[Allgemeine Statistik anzeigen]]></item>
+		<item name="wcf.acp.option.usermap_log_enable"><![CDATA[Aktivieren]]></item>
+		<item name="wcf.acp.option.usermap_log_cleanup"><![CDATA[Löschen]]></item>
+		<item name="wcf.acp.option.usermap_log_cleanup.description"><![CDATA[Protokoll-Einträge werden nach der angegebenen Zeit automatisch gelöscht.]]></item>
+		<item name="wcf.acp.option.usermap_map_geocoding_key"><![CDATA[Google Geocoding API-Schlüssel]]></item>
+		<item name="wcf.acp.option.usermap_map_geocoding_key.description"><![CDATA[Zusätzlicher Browser-API-Schlüssel für die Suche in der Karte und Synchronisation. Wird kein Schlüssel eingegeben, wird der in der System-Konfiguration angegebene Browser-API-Schlüssel genutzt. Ein kostenloser API Schlüssel ist <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" class="externalURL">hier</a> verfügbar.]]></item>
+		<item name="wcf.acp.option.usermap_map_map_center"><![CDATA[Zentrieren]]></item>
+		<item name="wcf.acp.option.usermap_map_map_center.description"><![CDATA[Karte abhängig von Einträgen beim Öffnen automatisch zentrieren.]]></item>
+		<item name="wcf.acp.option.usermap_map_map_marker"><![CDATA[Standard-Marker]]></item>
+		<item name="wcf.acp.option.usermap_map_group_enable"><![CDATA[Filter aktivieren]]></item>
+		<item name="wcf.acp.option.usermap_map_group_shorten"><![CDATA[Namen kürzen]]></item>
+		<item name="wcf.acp.option.usermap_map_group_shorten.description"><![CDATA[Verkürzt die Namen der Benutzergruppen auf die angegebene Anzahl von Zeichen.]]></item>
+		<item name="wcf.acp.option.usermap_map_region_code"><![CDATA[Region Code für Google Maps]]></item>
+		<item name="wcf.acp.option.usermap_map_region_code.description"><![CDATA[Der Region Code wird bei internen Ortssuchen zur Voreinstellung der Karte auf ein Land oder eine Region genutzt. Orte werden zunächst in diesem Land gesucht.<br>Er besteht aus 2 Buchstaben in Großschrift; z.B. DE für Deutschland und ES für Spanien. Der Region Code muss nicht ausgefüllt werden.]]></item>
+		<item name="wcf.acp.option.usermap_map_user_enable"><![CDATA[Filter aktivieren]]></item>
+		<item name="wcf.acp.option.usermap_map_user_enable.description"><![CDATA[Aktiviert den Benutzer-Filter Online / Follower / Team.]]></item>
+		<item name="wcf.acp.option.usermap_user_display_list"><![CDATA[In Listen zeigen]]></item>
+		<item name="wcf.acp.option.usermap_user_display_sidebar"><![CDATA[In der Seitenleiste zeigen (links)]]></item>
+		<item name="wcf.acp.option.usermap_user_filter_banned"><![CDATA[Gesperrte Benutzer anzeigen]]></item>
+		<item name="wcf.acp.option.usermap_user_filter_disabled"><![CDATA[Deaktivierte Benutzer anzeigen]]></item>
+		<item name="wcf.acp.option.usermap_user_filter_inactive"><![CDATA[Aktive Benutzer anzeigen]]></item>
+		<item name="wcf.acp.option.usermap_user_filter_inactive.description"><![CDATA[Es werden nur Benutzer angezeigt, die in den letzten X Tagen aktiv waren. „0“ eingeben, um alle Benutzer anzuzeigen.]]></item>
+		
+	</category>
+	
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.com.uz.usermap.geocode"><![CDATA[Benutzerkarte aktualisieren]]></item>
+		<item name="wcf.acp.rebuildData.com.uz.usermap.geocode.description"><![CDATA[Synchronisiert die Benutzerkarte mit den Benutzerdaten im Profil]]></item>
+	</category>
+	
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.com.uz.usermap.map"><![CDATA[Benutzerkarte-Einträge]]></item>
+	</category>
+	
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.usermap.state"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.user.condition.usermap.state.hasEntry"><![CDATA[Hat Eintrag]]></item>
+		<item name="wcf.user.condition.usermap.state.hasNotEntry"><![CDATA[Hat keinen Eintrag]]></item>
+		<item name="wcf.user.condition.usermap.state.error.conflict"><![CDATA[„Hat Eintrag“ und „Hat keinen Eintrag“ können nicht gleichzeitig ausgewählt werden.]]></item>
+	</category>
+	
+	<category name="usermap.acp">
+		<item name="usermap.acp.error.category.noIcons"><![CDATA[Keine Icons gefunden.]]></item>
+		<item name="usermap.acp.filename"><![CDATA[Dateiname]]></item>
+		<item name="usermap.acp.groups"><![CDATA[Benutzergruppe(n)]]></item>
+		<item name="usermap.acp.marker"><![CDATA[Marker]]></item>
+		<item name="usermap.acp.marker.delete.sure"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Willst du{else}Wollen Sie{/if} diesen Marker wirklich löschen?]]></item>
+		<item name="usermap.acp.marker.file"><![CDATA[Marker-Datei]]></item>
+		<item name="usermap.acp.marker.file.upload"><![CDATA[Marker hochladen]]></item>
+		<item name="usermap.acp.marker.file.upload.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Lade{else}Laden Sie{/if} hier die Bilddatei des Markers hoch. Der Marker darf maximal 100x200 px groß sein.]]></item>
+		<item name="usermap.acp.marker.file.upload.error.exists"><![CDATA[Die Datei existiert bereits.]]></item>
+		<item name="usermap.acp.marker.file.upload.error.name"><![CDATA[Der Dateiname darf nur aus ASCII-Zeichen bestehen. Leerzeichen sind nicht erlaubt.]]></item>
+		<item name="usermap.acp.marker.file.upload.error.noImage"><![CDATA[Bei der hochgeladenen Datei handelt es sich um keine Bilddatei.]]></item>
+		<item name="usermap.acp.marker.file.upload.error.tooBig"><![CDATA[Die Datei ist zu groß.]]></item>
+		<item name="usermap.acp.marker.file.upload.error.uploadFailed"><![CDATA[Das Hochladen der ausgewählten Datei ist fehlgeschlagen.]]></item>
+		<item name="usermap.acp.size"><![CDATA[Größe [Pixel]]]></item>
+		<item name="usermap.acp.used"><![CDATA[Der Marker wird genutzt und kann nicht gelöscht werden.]]></item>
+		<item name="usermap.acp.userGroup"><![CDATA[Benutzerkarte]]></item>
+		<item name="usermap.acp.userGroup.filter"><![CDATA[Filter]]></item>
+		<item name="usermap.acp.userGroup.filter.use"><![CDATA[Als Filter nutzen]]></item>
+		<item name="usermap.acp.userGroup.show"><![CDATA[Anzeige]]></item>
+		<item name="usermap.acp.userGroup.show.enable"><![CDATA[Mitglieder dieser Gruppe auf der Karte zeigen]]></item>
+		<item name="usermap.acp.userGroup.marker"><![CDATA[Marker]]></item>
+	</category>
+	
+	<category name="usermap.acp.log">
+		<item name="usermap.acp.log.clear"><![CDATA[Protokoll leeren]]></item>
+		<item name="usermap.acp.log.clear.confirm"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Willst du{else}Wollen Sie{/if} das Protokoll wirklich leeren?]]></item>
+		<item name="usermap.acp.log.connenction.error"><![CDATA[Fehler beim Aufruf von Google Maps]]></item>
+		<item name="usermap.acp.log.error.geocoding"><![CDATA[Geocoding-Fehler (Google)]]></item>
+		<item name="usermap.acp.log.error.unknown"><![CDATA[Unbekannter Fehler]]></item>
+		<item name="usermap.acp.log.input.deleted"><![CDATA[Eigenen Ort gelöscht]]></item>
+		<item name="usermap.acp.log.input.new"><![CDATA[Neuer eigener Ort]]></item>
+		<item name="usermap.acp.log.log"><![CDATA[Eintrag]]></item>
+		<item name="usermap.acp.log.none"><![CDATA[keine]]></item>
+		<item name="usermap.acp.log.notFound"><![CDATA[Ort nicht gefunden (Nominatim)]]></item>
+		<item name="usermap.acp.log.rebuild.end"><![CDATA[Ende Anzeigen aktualisieren]]></item>
+		<item name="usermap.acp.log.rebuild.start"><![CDATA[Start Anzeigen aktualisieren]]></item>
+		<item name="usermap.acp.log.remark"><![CDATA[Bemerkung]]></item>
+		<item name="usermap.acp.log.result.multiple"><![CDATA[Mehr als ein Geocoding-Ergebnis; erstes übernommen]]></item>
+		<item name="usermap.acp.log.status"><![CDATA[Status]]></item>
+		<item name="usermap.acp.log.status.ok"><![CDATA[Ok]]></item>
+		<item name="usermap.acp.log.status.warning"><![CDATA[Warnung]]></item>
+		<item name="usermap.acp.log.status.error"><![CDATA[Fehler]]></item>
+		<item name="usermap.acp.log.sync.delete"><![CDATA[Eigenen Ort über Profilfeld gelöscht]]></item>
+		<item name="usermap.acp.log.sync.new"><![CDATA[Neuer eigener Ort über Profilfeld]]></item>
+		<item name="usermap.acp.log.time"><![CDATA[Zeit]]></item>
+		<item name="usermap.acp.log.username"><![CDATA[Benutzer]]></item>
+		
+	</category>
+	
+	<category name="usermap.acp.menu">
+		<item name="usermap.acp.menu.link.usermap"><![CDATA[Benutzerkarte]]></item>
+		<item name="usermap.acp.menu.link.usermap.log.list"><![CDATA[Protokoll]]></item>
+		<item name="usermap.acp.menu.link.usermap.marker.add"><![CDATA[Marker hinzufügen]]></item>
+		<item name="usermap.acp.menu.link.usermap.marker.list"><![CDATA[Marker]]></item>
+	</category>
+	
+	<category name="usermap.index">
+		<item name="usermap.index.beta.test"><![CDATA[Benutzerkarte - Beta-Phase ist beendet.]]></item>
+		<item name="usermap.index.copyright"><![CDATA[<a href="https://www.zaydowicz.de" rel="nofollow"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>Benutzerkarte: <strong>Benutzerkarte{if SHOW_VERSION_NUMBER} {@PACKAGE_VERSION}{/if}</strong>, entwickelt von <strong>zaydowicz.de</strong></a>]]></item>
+		<item name="usermap.index.stats"><![CDATA[Statistik]]></item>
+		<item name="usermap.index.stats.detail"><![CDATA[{#$stats[usersMap]} {if $stats[usersMap] != 1}Einträge{else}Eintrag{/if} - {#$stats[usersTotal]} Mitglieder - {#$stats[usageMap]}% der anzuzeigenden Mitglieder haben einen Ort eingetragen]]></item>
+		
+	</category>
+	
+	<category name="usermap.user">
+		<item name="usermap.user.account.location.delete"><![CDATA[Löschen]]></item>
+		<item name="usermap.user.account.location.delete.activated"><![CDATA[Eigenen Ort nach dem Absenden löschen.]]></item>
+		<item name="usermap.user.account.location.input"><![CDATA[Ort]]></item>
+		<item name="usermap.user.account.location.input.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Gib{else}Geben Sie{/if} den Ort ein, um die Suche zu starten, und {if LANGUAGE_USE_INFORMAL_VARIANT}wähle{else}wählen Sie{/if} ein Ergebnis aus den Vorschlägen aus.]]></item>
+		<item name="usermap.user.account.location.keyMissing"><![CDATA[Kein Browser-API-Schlüssel gefunden. Die Benutzerkarte kann nicht genutzt werden.]]></item>
+		<item name="usermap.user.account.location.nok"><![CDATA[Kein Ort erfasst]]></item>
+		
+		<item name="usermap.user.account.menu"><![CDATA[Benutzerkarte]]></item>
+		<item name="usermap.user.account.menu.input"><![CDATA[Eigener Ort]]></item>
+		
+		<item name="usermap.user.map.button.center"><![CDATA[Zentrieren]]></item>
+		<item name="usermap.user.map.button.cleanup"><![CDATA[Aufräumen]]></item>
+		<item name="usermap.user.map.button.filter"><![CDATA[Filtern]]></item>
+		<item name="usermap.user.map.button.filter.reset"><![CDATA[Reset]]></item>
+		<item name="usermap.user.map.button.route"><![CDATA[Route]]></item>
+		<item name="usermap.user.map.button.search"><![CDATA[Suchen]]></item>
+		
+		<item name="usermap.user.map.controls"><![CDATA[Funktionen]]></item>
+		
+		<item name="usermap.user.map.filter.active"><![CDATA[aktiv]]></item>
+		<item name="usermap.user.map.filter.all"><![CDATA[alle]]></item>
+		<item name="usermap.user.map.filter.follower"><![CDATA[Follower]]></item>
+		<item name="usermap.user.map.filter.online"><![CDATA[Online]]></item>
+		<item name="usermap.user.map.filter.team"><![CDATA[Team]]></item>
+		<item name="usermap.user.map.filter.user"><![CDATA[Benutzer-Filter]]></item>
+		
+		<item name="usermap.user.map.route"><![CDATA[Route]]></item>
+		<item name="usermap.user.map.route.distance"><![CDATA[Entfernung:]]></item>
+		<item name="usermap.user.map.route.error"><![CDATA[Es müssen mindestens 2 Wegpunkte ausgewählt werden.<br>Wegpunkte können über die Benutzer-/Ortsuche und/oder durch Klicken auf Benutzer in der Karte festgelegt werden.]]></item>
+		<item name="usermap.user.map.route.found"><![CDATA[Route gefunden:]]></item>
+		<item name="usermap.user.map.route.open"><![CDATA[Mit Google öffnen]]></item>
+		<item name="usermap.user.map.route.waypoints"><![CDATA[Wegpunkte:]]></item>
+		
+		<item name="usermap.user.map.search"><![CDATA[Benutzer-/Ortsuche]]></item>
+		<item name="usermap.user.map.search.location.placeholder"><![CDATA[Ort]]></item>
+		<item name="usermap.user.map.search.error.bothEmpty"><![CDATA[Es muss ein Benutzername und/oder ein Ort eingegeben werden.]]></item>
+		<item name="usermap.user.map.search.error.bothNotFound"><![CDATA[Es konnte weder ein Benutzer noch ein Ort gefunden werden.]]></item>
+		<item name="usermap.user.map.search.error.direction"><![CDATA[Es konnte keine Route ermittelt werden.]]></item>
+		<item name="usermap.user.map.search.error.locationNotFound"><![CDATA[Der Ort konnte nicht gefunden werden.]]></item>
+		<item name="usermap.user.map.search.error.userNotFound"><![CDATA[Der Benutzer konnte nicht gefunden werden.]]></item>
+		<item name="usermap.user.map.search.user.placeholder"><![CDATA[Benutzer]]></item>
+		
+		<item name="usermap.user.no"><![CDATA[nein]]></item>
+		<item name="usermap.user.profile.noEntry"><![CDATA[Der Benutzer hat noch keinen Ort hinterlegt oder hat den Zugriff zum Karteneintrag eingeschränkt.]]></item>
+		<item name="usermap.user.profile.noEntry.user"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} noch keinen <a href="{link controller='UsermapUserInput' application='usermap'}{/link}">eigenen Ort</a> hinterlegt oder den Zugriff zum Karteneintrag eingeschränkt.]]></item>
+		<item name="usermap.user.profile.noPermission"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du kannst{else}Sie können{/if} die Benutzerkarte nicht benutzen.]]></item>
+		<item name="usermap.user.profile.show"><![CDATA[Im Profil anzeigen]]></item>
+		<item name="usermap.user.show.profile"><![CDATA[Karteneintrag von {$user->username} anzeigen]]></item>
+		<item name="usermap.user.sidebar.entry"><![CDATA[Karteneintrag]]></item>
+		<item name="usermap.user.yes"><![CDATA[ja]]></item>
+	</category>
+	
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.category.settings.privacy.usermap"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.user.option.usermapAllowEntry"><![CDATA[Karteneintrag erlauben]]></item>
+		<item name="wcf.user.option.usermapField"><![CDATA[Benutzerkarte]]></item>
+		<item name="wcf.user.option.usermapField.description"><![CDATA[Die hier eingetragenen Ortsdaten werden in die Benutzerkarte übernommen.]]></item>
+	</category>
+	
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.usermap"><![CDATA[Karte]]></item>
+	</category>
+</import>
+<delete>
+	<item name="usermap.acp.delete.sure" />
+</delete>
+</language>

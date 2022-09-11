@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/userMenu.xsd">
+	<import>
+		<usermenuitem name="usermap.user.account.menu">
+			<classname>\usermap\system\menu\user\UsermapUserMenuItemProvider</classname>
+			<options>module_usermap</options>
+			<iconclassname>fa-globe</iconclassname>
+		</usermenuitem>
+		
+		<usermenuitem name="usermap.user.account.menu.input">
+			<controller>usermap\form\UsermapUserInputForm</controller>
+			<parent>usermap.user.account.menu</parent>
+			<permissions>user.usermap.canUseUsermap</permissions>
+			<options>module_usermap</options>
+		</usermenuitem>
+	</import>
+</data>

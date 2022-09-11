@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/pagemnu.xsd">
+	<import>
+		<acpmenuitem name="usermap.acp.menu.link.usermap">
+			<parent>wcf.acp.menu.link.application</parent>
+		</acpmenuitem>
+		
+		<acpmenuitem name="usermap.acp.menu.link.usermap.marker.list">
+			<controller>usermap\acp\page\MarkerList</controller>
+			<parent>usermap.acp.menu.link.usermap</parent>
+			<permissions>admin.usermap.canManage</permissions>
+		</acpmenuitem>
+		
+		<acpmenuitem name="usermap.acp.menu.link.usermap.marker.add">
+			<controller>usermap\acp\form\MarkerAddForm</controller>
+			<parent>usermap.acp.menu.link.usermap.marker.list</parent>
+			<permissions>admin.usermap.canManage</permissions>
+			<icon>fa-plus</icon>
+		</acpmenuitem>
+		
+		<acpmenuitem name="usermap.acp.menu.link.usermap.log.list">
+			<controller>usermap\acp\page\LogList</controller>
+			<parent>usermap.acp.menu.link.usermap</parent>
+			<permissions>admin.usermap.canManage</permissions>
+		</acpmenuitem>
+	</import>
+</data>

@@ -1,0 +1,25 @@
+/* heights of different map containers */
+.usermap {
+	height: 550px;
+}
+
+.usermapInput {
+	height: 400px;
+}
+
+.usermapInfoWindow {
+	.boxHeadline {
+		margin-top: 0;
+		white-space: nowrap;
+	}
+	
+	> ul {
+		margin-top: 7px;
+		
+		> li {
+			&:not(:last-child) {
+				margin-bottom: 7px;
+			}
+		}
+	}
+}
