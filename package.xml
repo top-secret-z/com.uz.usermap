@@ -1,73 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="com.uz.usermap" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
-	<packageinformation>
-		<packagename>User Map</packagename>
-		<packagedescription>Map for user locations using Google Maps</packagedescription>
-		<packagename language="de">Benutzerkarte</packagename>
-		<packagedescription language="de">Google Maps-Karte für die Benutzer-Orte</packagedescription>
-		<version>5.5.1</version>
-		<date>2022-07-15</date>
-		<isapplication>1</isapplication>
-	</packageinformation>
-	
-	<authorinformation>
-		<author>Zaydowicz</author>
-	</authorinformation>
-	
-	<requiredpackages>
-		<requiredpackage minversion="5.5.0">com.woltlab.wcf</requiredpackage>
-	</requiredpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-	</excludedpackages>
-	
-	<optionalpackages>
-		<optionalpackage file="optionals/com.uz.wcf.bot3.usermap.tar">com.uz.wcf.bot3.usermap</optionalpackage>
-	</optionalpackages>
-	
-	<instructions type="install">
-		<instruction type="sql" run="standalone">install.sql</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="templateListener">templateListener.xml</instruction>
-		<instruction type="file">files.tar</instruction>
-		<instruction type="file" application="wcf">files_wcf.tar</instruction>
-		<instruction type="cronjob">cronjob.xml</instruction>
-		<instruction type="eventListener">eventListener.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption.xml</instruction>
-		<instruction type="objectType">objectType.xml</instruction>
-		<instruction type="acpMenu">acpMenu.xml</instruction>
-		<instruction type="page">page.xml</instruction>
-		<instruction type="userMenu">userMenu.xml</instruction>
-		<instruction type="userProfileMenu">userProfileMenu.xml</instruction>
-		<instruction type="menuItem">menuItem.xml</instruction>
-		<instruction type="option">option.xml</instruction>
-		<instruction type="userOption">userOption.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.0">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="file" application="wcf">files_wcf.tar</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="fileDelete">fileDelete.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.1">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="file" application="wcf">files_wcf.tar</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="fileDelete">fileDelete.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.5.0">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="file" application="wcf">files_wcf.tar</instruction>
-	</instructions>
-	
+<package name="de.softcreatr.usermap" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd">
+    <packageinformation>
+        <packagename>User Map</packagename>
+        <packagedescription>Map for user locations using Google Maps</packagedescription>
+        <packagename language="de">Benutzerkarte</packagename>
+        <packagedescription language="de">Google Maps-Karte für die Benutzer-Orte</packagedescription>
+        <version>5.5.2</version>
+        <date>2022-09-18</date>
+        <isapplication>1</isapplication>
+    </packageinformation>
+
+    <authorinformation>
+        <author><![CDATA[SoftCreatR.dev]]></author>
+        <authorurl><![CDATA[https://softcreatr.dev]]></authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredpackage minversion="5.5.0">com.woltlab.wcf</requiredpackage>
+    </requiredpackages>
+
+    <excludedpackages>
+        <excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="*">com.uz.usermap</excludedpackage>
+    </excludedpackages>
+
+    <optionalpackages>
+        <!-- <optionalpackage file="optionals/de.softcreatr.wcf.bot3.usermap.tar.gz">de.softcreatr.wcf.bot3.usermap</optionalpackage> -->
+    </optionalpackages>
+
+    <instructions type="install">
+        <instruction type="sql" run="standalone">install.sql</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="templateListener" />
+        <instruction type="file" />
+        <instruction type="file" application="wcf">files_wcf.tar</instruction>
+        <instruction type="cronjob" />
+        <instruction type="eventListener" />
+        <instruction type="userGroupOption" />
+        <instruction type="objectType" />
+        <instruction type="acpMenu" />
+        <instruction type="page" />
+        <instruction type="userMenu" />
+        <instruction type="userProfileMenu" />
+        <instruction type="menuItem" />
+        <instruction type="option" />
+        <instruction type="userOption" />
+        <instruction type="language" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.0">
+        <instruction type="file" />
+        <instruction type="file" application="wcf">files_wcf.tar</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="language" />
+        <instruction type="fileDelete" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.1">
+        <instruction type="file" />
+        <instruction type="file" application="wcf">files_wcf.tar</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="language" />
+        <instruction type="fileDelete" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.5.0">
+        <instruction type="file" />
+        <instruction type="file" application="wcf">files_wcf.tar</instruction>
+    </instructions>
+
+
+    <instructions type="update" fromversion="5.5.1">
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="templateListener" />
+        <instruction type="file" />
+        <instruction type="file" application="wcf">files_wcf.tar</instruction>
+        <instruction type="cronjob" />
+        <instruction type="eventListener" />
+        <instruction type="userGroupOption" />
+        <instruction type="objectType" />
+        <instruction type="acpMenu" />
+        <instruction type="page" />
+        <instruction type="userMenu" />
+        <instruction type="userProfileMenu" />
+        <instruction type="menuItem" />
+        <instruction type="option" />
+        <instruction type="userOption" />
+        <instruction type="language" />
+    </instructions>
 </package>

@@ -1,196 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
-	<import>
-		<categories>
-			<category name="usermap"></category>
-				<category name="usermap.general">
-					<parent>usermap</parent>
-				</category>
-				
-				<category name="usermap.index">
-					<parent>usermap</parent>
-					<showorder>1</showorder>
-				</category>
-				
-				<category name="usermap.data">
-					<parent>usermap</parent>
-					<showorder>2</showorder>
-				</category>
-					<category name="usermap.data.cache">
-						<parent>usermap.data</parent>
-					</category>
-					<category name="usermap.data.synchronize">
-						<parent>usermap.data</parent>
-					</category>
-				
-				<category name="usermap.map">
-					<parent>usermap</parent>
-					<showorder>3</showorder>
-				</category>
-					<category name="usermap.map.map">
-						<parent>usermap.map</parent>
-					</category>
-					<category name="usermap.map.group">
-						<parent>usermap.map</parent>
-					</category>
-					<category name="usermap.map.user">
-						<parent>usermap.map</parent>
-					</category>
-				
-				<category name="usermap.user">
-					<parent>usermap</parent>
-					<showorder>4</showorder>
-				</category>
-					<category name="usermap.user.display">
-						<parent>usermap.user</parent>
-					</category>
-					<category name="usermap.user.filter">
-						<parent>usermap.user</parent>
-					</category>
-				
-				<category name="usermap.log">
-					<parent>usermap</parent>
-					<showorder>5</showorder>
-				</category>
-		</categories>
-		
-		<options>
-			<option name="module_usermap">
-				<categoryname>module.community</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="usermap_data_cache_geo">
-				<categoryname>usermap.data.cache</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>14</defaultvalue>
-				<minvalue>1</minvalue>
-				<maxvalue>100</maxvalue>
-				<suffix>days</suffix>
-			</option>
-			<option name="usermap_data_synchronize_enable">
-				<categoryname>usermap.data.synchronize</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="usermap_data_synchronize_fields_enable">
-				<categoryname>usermap.data.synchronize</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-				<enableoptions>usermap_data_synchronize_with,usermap_data_synchronize_nominatim</enableoptions>
-			</option>
-			<option name="usermap_data_synchronize_nominatim">
-				<categoryname>usermap.data.synchronize</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="usermap_data_synchronize_with">
-				<categoryname>usermap.data.synchronize</categoryname>
-				<optiontype>usermap</optiontype>
-				<defaultvalue>location</defaultvalue>
-			</option>
-			
-			<option name="usermap_install_date">
-				<categoryname>usermap.general</categoryname>
-				<optiontype>integer</optiontype>
-				<hidden>1</hidden>
-			</option>
-			
-			<option name="usermap_index_enable_stats">
-				<categoryname>usermap.index</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="usermap_map_map_center">
-				<categoryname>usermap.map.map</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="usermap_map_map_marker">
-				<categoryname>usermap.map.map</categoryname>
-				<optiontype>markerSelect</optiontype>
-				<defaultvalue>marker_red</defaultvalue>
-			</option>
-			
-			<option name="usermap_map_geocoding_key">
-				<categoryname>usermap.map.map</categoryname>
-				<optiontype>text</optiontype>
-				<defaultvalue></defaultvalue>
-			</option>
-			
-			<option name="usermap_map_region_code">
-				<categoryname>usermap.map.map</categoryname>
-				<optiontype>text</optiontype>
-				<defaultvalue></defaultvalue>
-			</option>
-			
-			<option name="usermap_map_group_enable">
-				<categoryname>usermap.map.group</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-				<enableoptions>usermap_map_group_shorten</enableoptions>
-			</option>
-			<option name="usermap_map_group_shorten">
-				<categoryname>usermap.map.group</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>16</defaultvalue>
-				<minvalue>5</minvalue>
-				<maxvalue>255</maxvalue>
-			</option>
-			
-			<option name="usermap_map_user_enable">
-				<categoryname>usermap.map.user</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="usermap_user_display_sidebar">
-				<categoryname>usermap.user.display</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="usermap_user_display_list">
-				<categoryname>usermap.user.display</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			
-			<option name="usermap_user_filter_banned">
-				<categoryname>usermap.user.filter</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="usermap_user_filter_disabled">
-				<categoryname>usermap.user.filter</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-			</option>
-			<option name="usermap_user_filter_inactive">
-				<categoryname>usermap.user.filter</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>0</defaultvalue>
-				<minvalue>0</minvalue>
-				<maxvalue>3650</maxvalue>
-				<suffix>days</suffix>
-			</option>
-			
-			<option name="usermap_log_enable">
-				<categoryname>usermap.log</categoryname>
-				<optiontype>boolean</optiontype>
-				<defaultvalue>1</defaultvalue>
-				<enableoptions>usermap_log_cleanup</enableoptions>
-			</option>
-			<option name="usermap_log_cleanup">
-				<categoryname>usermap.log</categoryname>
-				<optiontype>integer</optiontype>
-				<defaultvalue>14</defaultvalue>
-				<minvalue>1</minvalue>
-				<maxvalue>365</maxvalue>
-				<suffix>days</suffix>
-			</option>
-		</options>
-	</import>
+    <import>
+        <categories>
+            <category name="usermap"></category>
+                <category name="usermap.general">
+                    <parent>usermap</parent>
+                </category>
+
+                <category name="usermap.index">
+                    <parent>usermap</parent>
+                    <showorder>1</showorder>
+                </category>
+
+                <category name="usermap.data">
+                    <parent>usermap</parent>
+                    <showorder>2</showorder>
+                </category>
+                    <category name="usermap.data.cache">
+                        <parent>usermap.data</parent>
+                    </category>
+                    <category name="usermap.data.synchronize">
+                        <parent>usermap.data</parent>
+                    </category>
+
+                <category name="usermap.map">
+                    <parent>usermap</parent>
+                    <showorder>3</showorder>
+                </category>
+                    <category name="usermap.map.map">
+                        <parent>usermap.map</parent>
+                    </category>
+                    <category name="usermap.map.group">
+                        <parent>usermap.map</parent>
+                    </category>
+                    <category name="usermap.map.user">
+                        <parent>usermap.map</parent>
+                    </category>
+
+                <category name="usermap.user">
+                    <parent>usermap</parent>
+                    <showorder>4</showorder>
+                </category>
+                    <category name="usermap.user.display">
+                        <parent>usermap.user</parent>
+                    </category>
+                    <category name="usermap.user.filter">
+                        <parent>usermap.user</parent>
+                    </category>
+
+                <category name="usermap.log">
+                    <parent>usermap</parent>
+                    <showorder>5</showorder>
+                </category>
+        </categories>
+
+        <options>
+            <option name="module_usermap">
+                <categoryname>module.community</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="usermap_data_cache_geo">
+                <categoryname>usermap.data.cache</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>14</defaultvalue>
+                <minvalue>1</minvalue>
+                <maxvalue>100</maxvalue>
+                <suffix>days</suffix>
+            </option>
+            <option name="usermap_data_synchronize_enable">
+                <categoryname>usermap.data.synchronize</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="usermap_data_synchronize_fields_enable">
+                <categoryname>usermap.data.synchronize</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+                <enableoptions>usermap_data_synchronize_with,usermap_data_synchronize_nominatim</enableoptions>
+            </option>
+            <option name="usermap_data_synchronize_nominatim">
+                <categoryname>usermap.data.synchronize</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+            <option name="usermap_data_synchronize_with">
+                <categoryname>usermap.data.synchronize</categoryname>
+                <optiontype>usermap</optiontype>
+                <defaultvalue>location</defaultvalue>
+            </option>
+
+            <option name="usermap_install_date">
+                <categoryname>usermap.general</categoryname>
+                <optiontype>integer</optiontype>
+                <hidden>1</hidden>
+            </option>
+
+            <option name="usermap_index_enable_stats">
+                <categoryname>usermap.index</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="usermap_map_map_center">
+                <categoryname>usermap.map.map</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+            <option name="usermap_map_map_marker">
+                <categoryname>usermap.map.map</categoryname>
+                <optiontype>markerSelect</optiontype>
+                <defaultvalue>marker_red</defaultvalue>
+            </option>
+
+            <option name="usermap_map_geocoding_key">
+                <categoryname>usermap.map.map</categoryname>
+                <optiontype>text</optiontype>
+                <defaultvalue></defaultvalue>
+            </option>
+
+            <option name="usermap_map_region_code">
+                <categoryname>usermap.map.map</categoryname>
+                <optiontype>text</optiontype>
+                <defaultvalue></defaultvalue>
+            </option>
+
+            <option name="usermap_map_group_enable">
+                <categoryname>usermap.map.group</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+                <enableoptions>usermap_map_group_shorten</enableoptions>
+            </option>
+            <option name="usermap_map_group_shorten">
+                <categoryname>usermap.map.group</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>16</defaultvalue>
+                <minvalue>5</minvalue>
+                <maxvalue>255</maxvalue>
+            </option>
+
+            <option name="usermap_map_user_enable">
+                <categoryname>usermap.map.user</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="usermap_user_display_sidebar">
+                <categoryname>usermap.user.display</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+            <option name="usermap_user_display_list">
+                <categoryname>usermap.user.display</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+
+            <option name="usermap_user_filter_banned">
+                <categoryname>usermap.user.filter</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+            <option name="usermap_user_filter_disabled">
+                <categoryname>usermap.user.filter</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+            </option>
+            <option name="usermap_user_filter_inactive">
+                <categoryname>usermap.user.filter</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>0</defaultvalue>
+                <minvalue>0</minvalue>
+                <maxvalue>3650</maxvalue>
+                <suffix>days</suffix>
+            </option>
+
+            <option name="usermap_log_enable">
+                <categoryname>usermap.log</categoryname>
+                <optiontype>boolean</optiontype>
+                <defaultvalue>1</defaultvalue>
+                <enableoptions>usermap_log_cleanup</enableoptions>
+            </option>
+            <option name="usermap_log_cleanup">
+                <categoryname>usermap.log</categoryname>
+                <optiontype>integer</optiontype>
+                <defaultvalue>14</defaultvalue>
+                <minvalue>1</minvalue>
+                <maxvalue>365</maxvalue>
+                <suffix>days</suffix>
+            </option>
+        </options>
+    </import>
 </data>

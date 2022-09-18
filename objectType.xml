@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/object-type.xsd">
-	<import>
-		<!-- Conditions -->
-		<type>
-			<name>com.uz.usermap.ad.state</name>
-			<definitionname>com.woltlab.wcf.condition.ad</definitionname>
-			<classname>usermap\system\condition\UsermapStateCondition</classname>
-			<conditionobject>com.woltlab.wcf.user</conditionobject>
-			<conditiongroup>general</conditiongroup>
-		</type>
-		<type>
-			<name>com.uz.usermap.notice.state</name>
-			<definitionname>com.woltlab.wcf.condition.notice</definitionname>
-			<classname>usermap\system\condition\UsermapStateCondition</classname>
-			<conditionobject>com.woltlab.wcf.user</conditionobject>
-			<conditiongroup>general</conditiongroup>
-		</type>
-		<type>
-			<name>com.uz.usermap.userGroupAssignment.state</name>
-			<definitionname>com.woltlab.wcf.condition.userGroupAssignment</definitionname>
-			<classname>usermap\system\condition\UsermapStateCondition</classname>
-			<conditiongroup>general</conditiongroup>
-		</type>
-		<type>
-			<name>com.uz.usermap.bulkProcessing.state</name>
-			<definitionname>com.woltlab.wcf.bulkProcessing.user.condition</definitionname>
-			<classname>usermap\system\condition\UsermapStateCondition</classname>
-			<conditiongroup>general</conditiongroup>
-		</type>
-		<type>
-			<name>com.uz.usermap.userSearch.state</name>
-			<definitionname>com.woltlab.wcf.condition.userSearch</definitionname>
-			<classname>usermap\system\condition\UsermapStateCondition</classname>
-			<conditiongroup>general</conditiongroup>
-		</type>
-		
-		<!-- trophy condition -->
-		<type>
-			<name>com.uz.usermap.trophy</name>
-			<definitionname>com.woltlab.wcf.condition.trophy</definitionname>
-			<classname>usermap\system\condition\UsermapStateCondition</classname>
-			<conditiongroup>general</conditiongroup>
-		</type>
-		
-		<!-- Rebuild data workers -->
-		<type>
-			<name>com.uz.usermap.geocode</name>
-			<definitionname>com.woltlab.wcf.rebuildData</definitionname>
-			<classname>usermap\system\worker\GeocodingRebuildDataWorker</classname>
-		</type>
-		
-		<!-- stat handlers -->
-		<type>
-			<name>com.uz.usermap.map</name>
-			<definitionname>com.woltlab.wcf.statDailyHandler</definitionname>
-			<classname>usermap\system\stat\UsermapMapStatDailyHandler</classname>
-			<default>0</default>
-			<categoryname>com.woltlab.wcf.user</categoryname>
-		</type>
-	</import>
+    <import>
+        <!-- Conditions -->
+        <type>
+            <name>com.uz.usermap.ad.state</name>
+            <definitionname>com.woltlab.wcf.condition.ad</definitionname>
+            <classname>usermap\system\condition\UsermapStateCondition</classname>
+            <conditionobject>com.woltlab.wcf.user</conditionobject>
+            <conditiongroup>general</conditiongroup>
+        </type>
+        <type>
+            <name>com.uz.usermap.notice.state</name>
+            <definitionname>com.woltlab.wcf.condition.notice</definitionname>
+            <classname>usermap\system\condition\UsermapStateCondition</classname>
+            <conditionobject>com.woltlab.wcf.user</conditionobject>
+            <conditiongroup>general</conditiongroup>
+        </type>
+        <type>
+            <name>com.uz.usermap.userGroupAssignment.state</name>
+            <definitionname>com.woltlab.wcf.condition.userGroupAssignment</definitionname>
+            <classname>usermap\system\condition\UsermapStateCondition</classname>
+            <conditiongroup>general</conditiongroup>
+        </type>
+        <type>
+            <name>com.uz.usermap.bulkProcessing.state</name>
+            <definitionname>com.woltlab.wcf.bulkProcessing.user.condition</definitionname>
+            <classname>usermap\system\condition\UsermapStateCondition</classname>
+            <conditiongroup>general</conditiongroup>
+        </type>
+        <type>
+            <name>com.uz.usermap.userSearch.state</name>
+            <definitionname>com.woltlab.wcf.condition.userSearch</definitionname>
+            <classname>usermap\system\condition\UsermapStateCondition</classname>
+            <conditiongroup>general</conditiongroup>
+        </type>
+
+        <!-- trophy condition -->
+        <type>
+            <name>com.uz.usermap.trophy</name>
+            <definitionname>com.woltlab.wcf.condition.trophy</definitionname>
+            <classname>usermap\system\condition\UsermapStateCondition</classname>
+            <conditiongroup>general</conditiongroup>
+        </type>
+
+        <!-- Rebuild data workers -->
+        <type>
+            <name>com.uz.usermap.geocode</name>
+            <definitionname>com.woltlab.wcf.rebuildData</definitionname>
+            <classname>usermap\system\worker\GeocodingRebuildDataWorker</classname>
+        </type>
+
+        <!-- stat handlers -->
+        <type>
+            <name>com.uz.usermap.map</name>
+            <definitionname>com.woltlab.wcf.statDailyHandler</definitionname>
+            <classname>usermap\system\stat\UsermapMapStatDailyHandler</classname>
+            <default>0</default>
+            <categoryname>com.woltlab.wcf.user</categoryname>
+        </type>
+    </import>
 </data>

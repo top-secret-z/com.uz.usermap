@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templateListener.xsd">
-	<import>
-		<!-- admin -->
-		<templatelistener name="usermapVersion">
-			<environment>admin</environment>
-			<templatename>index</templatename>
-			<eventname>softwareVersions</eventname>
-			<templatecode><![CDATA[{include file='__usermapVersion' application='usermap'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- user -->
-		<templatelistener name="javascriptInclude">
-			<environment>user</environment>
-			<templatename>headInclude</templatename>
-			<eventname>javascriptInclude</eventname>
-			<templatecode><![CDATA[{include file='__javascriptInclude' application='usermap'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- user -->
-		<templatelistener name="copyright">
-			<environment>user</environment>
-			<templatename>pageFooterCopyright</templatename>
-			<eventname>copyright</eventname>
-			<templatecode><![CDATA[{include file='__copyright' application='usermap'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- user group -->
-		<templatelistener name="userGroupAdd">
-			<environment>admin</environment>
-			<templatename>userGroupAdd</templatename>
-			<eventname>sections</eventname>
-			<templatecode><![CDATA[{include file='__userGroupAdd' application='usermap'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- message sidebar -->
-		<templatelistener name="messageSidebar">
-			<environment>user</environment>
-			<templatename>messageSidebar</templatename>
-			<eventname>userCredits</eventname>
-			<templatecode><![CDATA[{include file='__messageSidebar' application='usermap'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- user lists -->
-		<templatelistener name="userInformationStatistics">
-			<environment>user</environment>
-			<templatename>userInformationStatistics</templatename>
-			<eventname>statistics</eventname>
-			<templatecode><![CDATA[{include file='__userInformationStatistics' application='usermap'}]]></templatecode>
-		</templatelistener>
-		
-		<!-- profile -->
-		<templatelistener name="UserJavascriptInclude">
-			<environment>user</environment>
-			<templatename>user</templatename>
-			<eventname>javascriptInclude</eventname>
-			<templatecode><![CDATA[{include file='__userJavascriptInclude' application='usermap'}]]></templatecode>
-		</templatelistener>
-	</import>
+    <import>
+        <!-- admin -->
+        <templatelistener name="usermapVersion">
+            <environment>admin</environment>
+            <templatename>index</templatename>
+            <eventname>softwareVersions</eventname>
+            <templatecode><![CDATA[{include file='__usermapVersion' application='usermap'}]]></templatecode>
+        </templatelistener>
+
+        <!-- user -->
+        <templatelistener name="javascriptInclude">
+            <environment>user</environment>
+            <templatename>headInclude</templatename>
+            <eventname>javascriptInclude</eventname>
+            <templatecode><![CDATA[{include file='__javascriptInclude' application='usermap'}]]></templatecode>
+        </templatelistener>
+
+        <!-- user -->
+        <templatelistener name="copyright">
+            <environment>user</environment>
+            <templatename>pageFooterCopyright</templatename>
+            <eventname>copyright</eventname>
+            <templatecode><![CDATA[{include file='__copyright' application='usermap'}]]></templatecode>
+        </templatelistener>
+
+        <!-- user group -->
+        <templatelistener name="userGroupAdd">
+            <environment>admin</environment>
+            <templatename>userGroupAdd</templatename>
+            <eventname>sections</eventname>
+            <templatecode><![CDATA[{include file='__userGroupAdd' application='usermap'}]]></templatecode>
+        </templatelistener>
+
+        <!-- message sidebar -->
+        <templatelistener name="messageSidebar">
+            <environment>user</environment>
+            <templatename>messageSidebar</templatename>
+            <eventname>userCredits</eventname>
+            <templatecode><![CDATA[{include file='__messageSidebar' application='usermap'}]]></templatecode>
+        </templatelistener>
+
+        <!-- user lists -->
+        <templatelistener name="userInformationStatistics">
+            <environment>user</environment>
+            <templatename>userInformationStatistics</templatename>
+            <eventname>statistics</eventname>
+            <templatecode><![CDATA[{include file='__userInformationStatistics' application='usermap'}]]></templatecode>
+        </templatelistener>
+
+        <!-- profile -->
+        <templatelistener name="UserJavascriptInclude">
+            <environment>user</environment>
+            <templatename>user</templatename>
+            <eventname>javascriptInclude</eventname>
+            <templatecode><![CDATA[{include file='__userJavascriptInclude' application='usermap'}]]></templatecode>
+        </templatelistener>
+    </import>
 </data>
