@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
-	<import>
-		<!--  User add -->
-		<eventlistener name="usermapUserAddAdmin">
-			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
-			<eventname>saved</eventname>
-			<environment>admin</environment>
-			<listenerclassname>usermap\system\event\listener\UserAddListener</listenerclassname>
-		</eventlistener>
-		<eventlistener name="usermapUserAddUser">
-			<eventclassname>wcf\form\RegisterForm</eventclassname>
-			<eventname>saved</eventname>
-			<environment>user</environment>
-			<listenerclassname>usermap\system\event\listener\UserAddListener</listenerclassname>
-		</eventlistener>
-		
-		<!-- User update -->
-		<eventlistener name="usermapUserAdmin">
-			<eventclassname>wcf\data\user\UserAction</eventclassname>
-			<eventname>finalizeAction</eventname>
-			<environment>admin</environment>
-			<listenerclassname>usermap\system\event\listener\UserActionListener</listenerclassname>
-		</eventlistener>
-		<eventlistener name="usermapUserUser">
-			<eventclassname>wcf\data\user\UserAction</eventclassname>
-			<eventname>finalizeAction</eventname>
-			<environment>user</environment>
-			<listenerclassname>usermap\system\event\listener\UserActionListener</listenerclassname>
-		</eventlistener>
-		
-		<!-- User group configuration -->
-		<eventlistener name="userGroupAddUsermap">
-			<eventclassname>wcf\acp\form\UserGroupAddForm</eventclassname>
-			<eventname>assignVariables,readFormParameters,save,validate</eventname>
-			<listenerclassname>usermap\system\event\listener\UserGroupListener</listenerclassname>
-			<inherit>1</inherit>
-			<environment>admin</environment>
-		</eventlistener>
-		
-		<eventlistener name="userGroupEditUsermap">
-			<eventclassname>wcf\acp\form\UserGroupEditForm</eventclassname>
-			<eventname>readData</eventname>
-			<listenerclassname>usermap\system\event\listener\UserGroupListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-		
-		<!-- GDPR -->
-		<eventlistener name="usermapGdprExport">
-			<eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
-			<eventname>export</eventname>
-			<listenerclassname>usermap\system\event\listener\UserDataExportListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-	</import>
+    <import>
+        <!--  User add -->
+        <eventlistener name="usermapUserAddAdmin">
+            <eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+            <eventname>saved</eventname>
+            <environment>admin</environment>
+            <listenerclassname>usermap\system\event\listener\UserAddListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="usermapUserAddUser">
+            <eventclassname>wcf\form\RegisterForm</eventclassname>
+            <eventname>saved</eventname>
+            <environment>user</environment>
+            <listenerclassname>usermap\system\event\listener\UserAddListener</listenerclassname>
+        </eventlistener>
+
+        <!-- User update -->
+        <eventlistener name="usermapUserAdmin">
+            <eventclassname>wcf\data\user\UserAction</eventclassname>
+            <eventname>finalizeAction</eventname>
+            <environment>admin</environment>
+            <listenerclassname>usermap\system\event\listener\UserActionListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="usermapUserUser">
+            <eventclassname>wcf\data\user\UserAction</eventclassname>
+            <eventname>finalizeAction</eventname>
+            <environment>user</environment>
+            <listenerclassname>usermap\system\event\listener\UserActionListener</listenerclassname>
+        </eventlistener>
+
+        <!-- User group configuration -->
+        <eventlistener name="userGroupAddUsermap">
+            <eventclassname>wcf\acp\form\UserGroupAddForm</eventclassname>
+            <eventname>assignVariables,readFormParameters,save,validate</eventname>
+            <listenerclassname>usermap\system\event\listener\UserGroupListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>admin</environment>
+        </eventlistener>
+
+        <eventlistener name="userGroupEditUsermap">
+            <eventclassname>wcf\acp\form\UserGroupEditForm</eventclassname>
+            <eventname>readData</eventname>
+            <listenerclassname>usermap\system\event\listener\UserGroupListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+
+        <!-- GDPR -->
+        <eventlistener name="usermapGdprExport">
+            <eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
+            <eventname>export</eventname>
+            <listenerclassname>usermap\system\event\listener\UserDataExportListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+    </import>
 </data>

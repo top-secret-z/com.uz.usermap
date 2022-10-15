@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/userOption.xsd">
-	<import>
-		<categories>
-			<category name="settings.privacy.usermap">
-				<showorder>3</showorder>
-				<parent>settings.privacy</parent>
-			</category>
-		</categories>
-		
-		<options>
-			<option name="usermapField">
-				<categoryname>profile.personal</categoryname>
-				<optiontype>text</optiontype>
-				<searchable>1</searchable>
-				<visible>15</visible>
-				<editable>3</editable>
-			</option>
-			
-			<option name="usermapAllowEntry">
-				<categoryname>settings.privacy.usermap</categoryname>
-				<optiontype>boolean</optiontype>
-				<editable>3</editable>
-				<defaultvalue>1</defaultvalue>
-			</option>
-		</options>
-	</import>
+    <import>
+        <categories>
+            <category name="settings.privacy.usermap">
+                <showorder>3</showorder>
+                <parent>settings.privacy</parent>
+            </category>
+        </categories>
+
+        <options>
+            <option name="usermapField">
+                <categoryname>profile.personal</categoryname>
+                <optiontype>text</optiontype>
+                <searchable>1</searchable>
+                <visible>15</visible>
+                <editable>3</editable>
+            </option>
+
+            <option name="usermapAllowEntry">
+                <categoryname>settings.privacy.usermap</categoryname>
+                <optiontype>boolean</optiontype>
+                <editable>3</editable>
+                <defaultvalue>1</defaultvalue>
+            </option>
+        </options>
+    </import>
 </data>
